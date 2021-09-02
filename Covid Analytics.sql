@@ -211,7 +211,7 @@ FROM maincovid
 WHERE tests is not null and continent = 'Africa'
 ORDER BY vaccination_percentage DESC
 
-/* In Africa continent only Morocco and Tunisia are with over 10% vaccination percentage beside that below 10%, dominated with only 0.5% - 1% population are vaccination, even in South sudan, Uganda, Cote d'Ivoire , Ethiopia
+/* In Africa continent only Morocco and Tunisia are with over 10% vaccination percentage beside that below 10%, dominated with only 0.5% - 1% population are vaccinated, even in South sudan, Uganda, Cote d'Ivoire , Ethiopia
 and Madagascar are nearly zero percent and null percent of population vaccinated.*/
 
 WITH maincovid (continent, location, cases, deaths, tests, vaccinations, populations, median_age, cardiovasc_death_rate, 
@@ -255,7 +255,7 @@ FROM maincovid
 WHERE tests is not null and continent = 'Europe'
 ORDER BY vaccination_percentage DESC
 
-/* for comparassion, Europe have high percentage in test and vaccination with only 3 countries with vaccination percentage below 10%, Kosovo, Bosnia and Herzegovina and Ukraine and the lowest of test_percentage is Albania with
+/* for comparison, Europe has high percentage in test and vaccination with only 3 countries with vaccination percentage below 10%, Kosovo, Bosnia and Herzegovina and Ukraine and the lowest of test_percentage is Albania with
 only 25% of test_percentage which is high for countries in Africa. It shows there are unequal distribution of vaccines for third world nations towards first world nations like Europe and North America countries.*/
 
 -- Median_age on death_percentage
